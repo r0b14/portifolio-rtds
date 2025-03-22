@@ -1,0 +1,9 @@
+* {
+  font-family: "Inter", sans-serif, "Boldonse", system-ui;
+  box-sizing: border-box; // comportamento em caixa. 
+}
+
+.main::before {
+  content: " ";
+  background-color: url();
+}
