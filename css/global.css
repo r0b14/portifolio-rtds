@@ -1,5 +1,36 @@
 * {
   font-family: "Inter", sans-serif, "Boldonse", system-ui;
   box-sizing: border-box; // comportamento em caixa. 
+  
 }
 
+
+.main::before {
+  content: '';
+  background-image: url('/img/background-top.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 80vw;
+  height: 60vh;
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+
+.main::after {
+  content: '';
+  background-image: url('/img/background-botton.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100vw;
+  height: 100vh;
+  display: inline-block;
+  position: fixed;
+  botton: 0;
+  right: 0;
+  z-index: -1;
+  /* transform: rotate(180deg); */
+}
