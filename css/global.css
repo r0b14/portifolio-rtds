@@ -3,7 +3,3 @@
   box-sizing: border-box; // comportamento em caixa. 
 }
 
-.main::before {
-  content: " ";
-  background-color: url();
-}
