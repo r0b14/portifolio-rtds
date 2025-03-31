@@ -9,6 +9,7 @@ body {
   color: rgb(255, 255, 255);
 }
 
+// Font title
 .boldonse-regular {
   font-family: "Boldonse", system-ui;
   font-weight: 400;
@@ -38,19 +39,19 @@ body {
   text-align: center;
 }
 
-#header .informations p {
+#header #informations p {
   padding: 0px;
   margin: 7px;
 }
 
-header .informations {
+header #informations {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
 }
 
-header .informations p{
+header #informations p{
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -58,7 +59,9 @@ header .informations p{
   font-size: 1.2rem;
 }
 
-.informations p::before {
+// Estilizando os icones
+
+#informations p::before {
   content: "";
   display: inline-block;
   width: 25px;
@@ -68,16 +71,24 @@ header .informations p{
   margin-right: .5rem;
 }
 
-.informations .job::before {
-  background-image: url('/img/persona.svg');
+#informations .job::before {
+  background-image: url('/img/job.svg');
 }
-.informations .city::before {
+#informations .city::before {
   background-image: url('/img/location.svg');
 }
-.informations .numberphone::before {
+#informations .numberphone::before {
   background-image: url('/img/whatsapp.svg');
 }
-.informations .email::before {
+#informations .email::before {
   background-image: url('/img/email.svg');
 }
 
+
+// Responsividade
+@media only screen and (min-width: 768px) {
+
+  header {
+    flex-direction: row;
+  }
+}
